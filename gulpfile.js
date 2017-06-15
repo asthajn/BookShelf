@@ -1,10 +1,10 @@
 var gulp = require('gulp'),
     server = require('gulp-express');
-    console.log("Guld file working maybe");
+    console.log("Gulp file working maybe");
 
 gulp.task('server', function () {
     return server.run({
-        file: 'app.js'
+        file: './app.js'
     });
 });
 

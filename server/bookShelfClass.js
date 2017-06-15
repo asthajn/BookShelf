@@ -1,9 +1,11 @@
 import _ from 'underscore';
 import bookShelfData from '../models/BookShelf.js'
-class boofShelfClass{
 
+class bookShelfClass{
     constructor(){
+        console.log("In bookshelf constructor");
         books = bookShelfData.find();
+        console.log("books: ", books);
     }
     addBook = (newBook) => {
         let lastBookId = _.max(books, (book) =>{
@@ -17,3 +19,5 @@ class boofShelfClass{
 
     }
 }
+
+module.exports = bookShelfClass;
